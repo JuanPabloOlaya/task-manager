@@ -50,6 +50,19 @@
     }
   }
   &__user-info {
-    flex-grow: 0.5;
+    width: 200px;
+    padding: 5px;
+
+    // Flex
+    display: flex;
+    
+    // Elements
+    &__username {
+      padding-left: 5px;
+      padding-top: 12px;
+
+      // Flex
+      flex-grow: 1;
+    }
   }
 }

@@ -1,13 +1,32 @@
 <template>
   <header>
     <nav class="header">
-      <div class="header__title">
+      <div class="header__title" @click="$router.push('/')">
         <label>Task Manager</label>
       </div>
       <div class="header__items">
-        <a href="#" class="header__items__item">Home</a>
-        <a href="#" class="header__items__item">Tasks</a>
-        <a href="#" class="header__items__item">Calendar</a>
+        <router-link
+          to="/"
+          active-class="header__items__item--active"
+          class="header__items__item"
+          exact
+        >
+          Home
+        </router-link>
+        <router-link
+          to="/tasks"
+          active-class="header__items__item--active"
+          class="header__items__item"
+        >
+          Tasks
+        </router-link>
+        <router-link
+          to="/calendar"
+          active-class="header__items__item--active"
+          class="header__items__item"
+        >
+          Calendar
+        </router-link>
       </div>
       <div class="header__user-info" @click="expanded = !expanded">
         <img

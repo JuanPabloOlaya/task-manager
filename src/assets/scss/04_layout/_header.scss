@@ -64,5 +64,12 @@
       // Flex
       flex-grow: 1;
     }
+    &__icon {
+      padding-top: 8px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

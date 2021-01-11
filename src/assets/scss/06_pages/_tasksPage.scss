@@ -15,9 +15,19 @@
     transition: all 0.5s ease;
     background-color: lawngreen;
 
+    & .search-section__filters {
+      height: 110px;
+      width: 100%;
+    }
+    & .search-section__collapse-button {
+      height: 40px;
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+    }
     
-    &--collapsed {
-      top: 150px;
+    &.collapsed {
+      top: 0px;
     }
   }
   & .tools-section {
@@ -27,6 +37,10 @@
     width: 100%;
     transition: all 0.5s ease;
     background-color: lightblue;
+
+    &.collapsed {
+      top: 150px;
+    }
   }
   & .tasks-list-section {
     position: absolute;
@@ -35,5 +49,10 @@
     width: 100%;
     transition: all 0.5s ease;
     background-color: red;
+
+    &.collapsed {
+      top: 200px;
+      height: calc(100% - 200px);
+    }
   }
 }

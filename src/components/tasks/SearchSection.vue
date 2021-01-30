@@ -7,7 +7,13 @@
       <label>Filters</label>
     </div>
     <div class="search-section__collapse-button" @click="show = !show">
-      <span>Show Filters</span>
+      <span>
+        Show Filters
+        <i
+          class="mdi"
+          :class="{'mdi-chevron-down': !show, 'mdi-chevron-up': show}"
+        ></i>
+      </span>
     </div>
   </section>
 </template>
@@ -17,6 +23,7 @@ import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'SearchSection',
+  components: {},
   methods: {
     ...mapActions('tasks', [
       'updateShowFilters',

@@ -34,30 +34,24 @@
           alt="avatar"
           class="avatar"
         />
-        <span class="header__user-info__username">Juan Pablo Olaya</span>
-        <svg-icon
-          type="mdi"
-          :path="expanded ? mdiChevronUp : mdiChevronDown"
-          class="header__user-info__icon"
-        />
+        <span class="header__user-info__username">
+          Juan Pablo Olaya
+          <i
+            class="mdi"
+            :class="{'mdi-chevron-down': !expanded, 'mdi-chevron-up': expanded}"
+          ></i>
+        </span>
       </div>
     </nav>
   </header>
 </template>
 
 <script>
-import SvgIcon from '@jamescoyle/vue-icon';
-import { mdiChevronDown, mdiChevronUp } from '@mdi/js';
-
 export default {
   name: 'Header',
-  components: {
-    SvgIcon,
-  },
+  components: {},
   data() {
     return {
-      mdiChevronDown,
-      mdiChevronUp,
       expanded: false,
     };
   },

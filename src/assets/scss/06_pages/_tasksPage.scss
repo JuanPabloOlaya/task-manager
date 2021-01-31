@@ -1,5 +1,6 @@
 #tasksView {
   position: relative;
+  background-color: #f3f2f2;
 
   // Flex
   flex-grow: 1;
@@ -7,6 +8,7 @@
   flex-direction: column;
   overflow: hidden;
   
+  // Blocks
   & .search-section {
     position: absolute;
     top: -60px;
@@ -17,6 +19,7 @@
     border-bottom-right-radius: 15px;
     transition: all 0.5s ease;
 
+    // Elements
     &__filters {
       height: 60px;
       width: 100%;
@@ -30,13 +33,6 @@
       min-width: 24%;
 
       flex-grow: 1;
-
-      &:first-child {
-        padding-left: 2.5px;
-      }
-      &:last-child {
-        padding-right: 2.5px;
-      }
     }
     &__collapse-button {
       height: 40px;
@@ -52,6 +48,7 @@
       align-items: center;
     }
 
+    // Modifiers
     &--collapsed {
       top: 0px;
     }
@@ -63,11 +60,27 @@
     width: 100%;
     transition: all 0.5s ease;
     overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
 
     // Flex
     display: flex;
     flex-wrap: wrap;
 
+    // Elements
+    &__task {
+      max-width: 24%;
+      width: 100%;
+      margin: 5px;
+      height: auto;
+
+      &:nth-child(4n) {
+        margin-right: 0px;
+      }
+    }
+
+    // Modifiers
     &--collapsed {
       top: 100px;
       height: calc(100% - 100px);

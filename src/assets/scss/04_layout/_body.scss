@@ -5,6 +5,7 @@ body {
 
   & *::-webkit-scrollbar {
     appearance: none;
+    background-color: #FFF;
   }
   & *::-webkit-scrollbar:vertical {
     width: 10px;

@@ -1,10 +1,7 @@
 <template>
   <div id="tasksView">
     <search-section />
-    <div class="tools-section" :class="{'collapsed': show}">
-      <label>Herramientas</label>
-    </div>
-    <div class="tasks-list-section" :class="{'collapsed': show}">
+    <div class="tasks-list-section" :class="{ 'tasks-list-section--collapsed': show }">
       <label>Lista de tareas</label>
     </div>
   </div>

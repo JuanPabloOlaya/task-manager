@@ -56,27 +56,21 @@
       top: 0px;
     }
   }
-  & .tools-section {
-    position: absolute;
-    top: 40px;
-    height: 50px;
-    width: 100%;
-    transition: all 0.5s ease;
-
-    &.collapsed {
-      top: 150px;
-    }
-  }
   & .tasks-list-section {
     position: absolute;
-    top: 90px;
-    height: calc(100% - 90px);
+    top: 40px;
+    height: calc(100% - 40px);
     width: 100%;
     transition: all 0.5s ease;
+    overflow-y: auto;
 
-    &.collapsed {
-      top: 200px;
-      height: calc(100% - 200px);
+    // Flex
+    display: flex;
+    flex-wrap: wrap;
+
+    &--collapsed {
+      top: 100px;
+      height: calc(100% - 100px);
     }
   }
 }

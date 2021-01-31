@@ -2,6 +2,26 @@ body {
   margin: 0px;
   overflow: hidden;
   font-family: sans-serif;
+
+  & *::-webkit-scrollbar {
+    appearance: none;
+  }
+  & *::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+  & *::-webkit-scrollbar:horizontal {
+    width: 10px;
+  }
+  & *::-webkit-scrollbar-button:increment,
+  *::-webkit-scrollbar-button {
+    display: none;
+  }
+  & *::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+    transition: all ease 1s;
+  }
 }
 
 #app {

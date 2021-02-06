@@ -70,10 +70,13 @@
 
     // Elements
     &__task {
-      max-width: 24%;
+      max-width: 24.3%;
       width: 100%;
       margin: 5px;
-      height: auto;
+
+      // Flex
+      display: flex;
+      flex-grow: 1;
 
       &:nth-child(4n) {
         margin-right: 0px;

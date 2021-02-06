@@ -12,7 +12,7 @@ import Task from './Task.vue';
 export default {
   name: 'TaskListSection',
   data: () => ({
-    n: 5,
+    n: 100,
   }),
   components: {
     Task,

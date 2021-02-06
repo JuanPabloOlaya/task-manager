@@ -1,11 +1,15 @@
 .card {
   width: 100%;
   max-width: 100%;
-  height: auto;
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #747373;
   overflow: hidden;
+
+
+  // Flex
+  display: flex;
+  flex-direction: column;
 
   // Elements
   &__image {
@@ -28,8 +32,56 @@
     margin-left: 5px;
     margin-right: 5px;
     text-align: left;
+    font-size: 14px;
+    opacity: 0.5;
   }
-  // Flex
-  display: flex;
-  flex-direction: column;
+  &__actions {
+    height: 40px;
+
+    // Flex
+    display: flex;
+  }
+  &__action {
+    font-size: 20px;
+    color: $accent-color;
+    transition: all ease 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-light-color;
+      background-color: $accent-color;
+    }
+
+    // Flex
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    // Modifiers
+    &--delete {
+      color: $delete-color;
+
+      &:hover {
+        color: $text-light-color;
+        background-color: $delete-color;
+      }
+    }
+    &--update {
+      color: $update-color;
+
+      &:hover {
+        color: $text-light-color;
+        background-color: $update-color;
+      }
+    }
+    &--detail {
+      color: $success-color;
+
+      &:hover {
+        color: $text-light-color;
+        background-color: $success-color;
+      }
+    }
+  }
 }

@@ -8,10 +8,9 @@
       />
       <span class="card__title">Card title</span>
       <div class="card__description">
-        Lorem ipsum dolor sit, ametaaaaaaaaaaaaa aaaddaaffa Lorem ipsum dolor sit, ametaaaaaaaaaaaaa
-        aaaddaaffaLorem ipsum dolor sit, ametaaaaaaaaaaaaa aaaddaaffaLorem ipsum dolor sit,
-        ametaaaaaaaaaaaaa aaaddaaffaLorem ipsum dolor sit, ametaaaaaaaaaaaaa aaaddaaffaLorem ipsum
-        dolor sit, ametaaaaaaaaaaaaa aaaddaaffa
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi magnam quaerat commodi
+        similique provident aspernatur, quae debitis consectetur mollitia ex facilis aliquam iusto
+        voluptatum neque fuga sint praesentium est ea.
       </div>
       <div class="card__actions">
         <div class="card__action card__action--delete">
@@ -22,9 +21,6 @@
         </div>
         <div class="card__action card__action--detail">
           <i class="mdi mdi-eye-outline"></i>
-        </div>
-        <div class="card__action">
-          <i class="mdi mdi-plus"></i>
         </div>
       </div>
     </div>

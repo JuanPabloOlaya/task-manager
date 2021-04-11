@@ -27,6 +27,8 @@
     font-weight: 600;
   }
   &__description {
+    max-height: 80px;
+    text-overflow: ellipsis;
     margin-top: 0px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -37,6 +39,7 @@
   }
   &__actions {
     height: 40px;
+    border-top: 1px solid #c5c3c3;
 
     // Flex
     display: flex;
